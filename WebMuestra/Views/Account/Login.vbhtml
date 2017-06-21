@@ -10,7 +10,7 @@ End Code
             @Using Html.BeginForm("Login", "Account", New With { .ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, New With {.class = "form-horizontal", .role = "form"})
                 @Html.AntiForgeryToken()
                 @<text>
-                <h4>Use a local account to log in.</h4>
+                <h4>Ingresa tus datos para iniciar sesión.</h4>
                 <hr />
                 @Html.ValidationSummary(True, "", New With {.class = "text-danger"})
                 <div class="form-group">
@@ -41,7 +41,7 @@ End Code
                     </div>
                 </div>
                 <p>
-                    @Html.ActionLink("Register as a new user", "Register")
+                    @Html.ActionLink("¿No tienes cuenta? Regístrate", "Register")
                 </p>
                 @* Enable this once you have account confirmation enabled for password reset functionality
                     <p>
@@ -51,11 +51,7 @@ End Code
             End Using
         </section>
     </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm">
-            @Html.Partial("_ExternalLoginsListPartial", New ExternalLoginListViewModel With {.ReturnUrl = ViewBag.ReturnUrl})
-        </section>
-    </div>
+    <!--Div login otra forma-->
 </div>
 @Section Scripts
     @Scripts.Render("~/bundles/jqueryval")

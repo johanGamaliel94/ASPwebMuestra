@@ -1,18 +1,18 @@
 ﻿@Code
-    ViewData("Title") = "Contact"
+    ViewData("Title") = "Contáctanos"
 End Code
 
 <h2>@ViewData("Title").</h2>
 <h3>@ViewData("Message")</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
+    Mariano Escobedo #512<br />
+    Col. Anáhuac, Del. Miguel Hidalgo. CP 11320<br />
     <abbr title="Phone">P:</abbr>
-    425.555.0100
+    55-24-84-40
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Atención al cliente:</strong>   <a>correo@soporte.com</a><br />
+    <strong>Ventas:</strong> <a>correo@ventas.com</a>
 </address>

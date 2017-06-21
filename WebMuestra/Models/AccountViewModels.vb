@@ -47,10 +47,10 @@ Public Class LoginViewModel
 
     <Required>
     <DataType(DataType.Password)>
-    <Display(Name:="Password")>
+    <Display(Name:="Contraseña")>
     Public Property Password As String
 
-    <Display(Name:="Remember me?")>
+    <Display(Name:="Recordarme")>
     Public Property RememberMe As Boolean
 End Class
 
@@ -68,7 +68,7 @@ Public Class RegisterViewModel
 
     <DataType(DataType.Password)>
     <Display(Name:="Confirma tu contraseña")>
-    <Compare("Contraseña", ErrorMessage:="Las contraseñas no coinciden, verifica.")>
+    <Compare("Password", ErrorMessage:="Las contraseñas no coinciden, verifica.")>
     Public Property ConfirmPassword As String
 End Class
 
@@ -79,14 +79,14 @@ Public Class ResetPasswordViewModel
     Public Property Email() As String
 
     <Required>
-    <StringLength(100, ErrorMessage:="The {0} must be at least {2} characters long.", MinimumLength:=6)>
+    <StringLength(100, ErrorMessage:="La {0} debe ser de al menos {2} caracteres de largo.", MinimumLength:=6)>
     <DataType(DataType.Password)>
-    <Display(Name:="Password")>
+    <Display(Name:="Contraseña")>
     Public Property Password() As String
 
     <DataType(DataType.Password)>
-    <Display(Name:="Confirm password")>
-    <Compare("Password", ErrorMessage:="The password and confirmation password do not match.")>
+    <Display(Name:="Confirma tu contraseña.")>
+    <Compare("Password", ErrorMessage:="Las contraseñas no coinciden, verifica.")>
     Public Property ConfirmPassword() As String
 
     Public Property Code() As String

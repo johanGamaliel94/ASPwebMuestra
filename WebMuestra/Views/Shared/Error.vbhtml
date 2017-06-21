@@ -5,4 +5,4 @@
 End Code
 
 <h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<h2 class="text-danger">Ha ocurrido un error mientras se procesaba tu petición, lo sentimos.</h2>
